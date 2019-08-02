@@ -1,0 +1,237 @@
+/*Global*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+Layout
+*/
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+/*label*/
+.label {
+    color: black;
+    background: white;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/*btn-social*/
+.btn-social {
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 100%;
+}
+
+.btn-social-fb:hover {
+    border-color: #4267b2;
+    color: #4267b2;
+}
+
+.btn-social-tw:hover {
+    border-color: #1ca1f2;
+    color: #1ca1f2;
+}
+
+/*HEADER*/
+header {
+    background-color: #62346f;
+}
+
+header .logo {
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-right: 8.8rem;
+}
+
+header .container {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .list-share {
+    display: flex;
+}
+
+header .list-share li {
+    margin-left: 2.0rem;
+}
+
+/*nav-main*/
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main li {
+    margin-right: 4.0rem;
+}
+
+/*coverpage*/
+.coverpage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coverpage .articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*Articles*/
+.post {
+    position: relative;
+}
+
+.post .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 2rem 3.8rem;
+    background: rgba(0,0,0,.5);
+}
+
+.post .time-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .time-social ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post .time-social li {
+    margin-left: 12px;
+}
+
+.post h3 {
+    margin-bottom: 2.0rem;
+}
+
+/*post-one*/
+.post-one h2 {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.post-one h2::after {
+    content: "";
+    width: 50%;
+    height: 0.8rem;
+    background: white;
+    border-radius: 6px; 
+    display: block;
+    margin-top: 0.8rem;
+}
+
+.post-one h3 {
+    padding-right: 3rem;
+    line-height: 3.2rem;
+}
+
+/*post-two*/
+.post-two h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.post-two .text {
+    padding: 0.8rem;
+}
+
+.post-two .time-social {
+    display: block;
+}
+
+.post-two .time-social ul {
+    justify-content: flex-end;
+    margin-top: 0.8rem;
+}
+
+/*post-three*/
+.post-three h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    padding-right: 7rem;
+}
+
+.post-three .text {
+    padding: 0.8rem;
+    justify-content: flex-end;
+}
+
+.post-three .label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+
+
+
+/*main*/
+main {
+    padding: 2rem 0;
+}
