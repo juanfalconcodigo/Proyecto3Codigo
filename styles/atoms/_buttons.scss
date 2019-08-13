@@ -1,0 +1,35 @@
+.btn-social {
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 2px solid #000;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.4rem;
+    border-radius: 100%;
+}
+
+.btn-social-fb:hover {
+    border-color: #4267b2;
+    color: #4267b2;
+}
+
+.btn-social-tw:hover {
+    border-color: #1ca1f2;
+    color: #1ca1f2;
+}
+
+.btn-detail {
+    /*background: blue;*/
+    display: flex;
+    justify-content: center;
+    & .a-detail {
+        /*background: red;*/
+        border-radius: 16px;
+        border: solid 3px #7b3fb6;
+        color: #7b3fb6;
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: Lato;
+        padding: 0.6rem 3rem;
+    }
+}

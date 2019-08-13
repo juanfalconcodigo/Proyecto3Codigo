@@ -1,0 +1,78 @@
+@import "../atoms/etiqueta";
+.articulo-interesante {
+    /*background: blue;*/
+    display: block;
+    & h3 {
+        /*background: lawngreen;*/
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
+    }
+    & figure {
+        width: 100%;
+        height: 100%;
+        /*background-color: brown;*/
+        /*:(*/
+        margin-bottom: 1rem;
+        & img {
+            width: 100%;
+            background-size: cover;
+            overflow: hidden;
+        }
+    }
+}
+
+.interesante-deporte {
+    background: #ff0505;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+time {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+}
+
+.interesante-info {
+    /*background: yellow;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+
+/*tamaño*/
+
+.num1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.num2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+/*colores papu */
+
+.interesante-espectaculo {
+    background: #ff00e3;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.interesante-gold {
+    background: #f9a103;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.interesante-purple {
+    background: #5c3667;
+    color: #ffffff;
+    font-weight: bold;
+}

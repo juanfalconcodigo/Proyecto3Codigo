@@ -1,0 +1,82 @@
+@import '../atoms/post-detail';
+@import '../atoms/buttons';
+@import "../molecules/articulo-interesante";
+main {
+    color: black;
+    padding: 2.5rem 0 3.5rem 0;
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
+
+.noticia {
+    & .noticia-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & h1 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    & p {
+        font-size: 1.3rem;
+        line-height: 1.38;
+        color: #161616;
+        margin-bottom: 2rem;
+    }
+    & .p-final {
+        margin-bottom: 5rem;
+    }
+    & .h3-noticia {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*especiales*/
+
+.label-noticia {
+    color: white;
+    background: #5c3667;
+}
+
+time {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+}
+
+.margin-text {
+    margin-bottom: 1.2rem;
+}
+
+em,
+strong {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.14;
+    color: #009d78;
+    margin-bottom: 1rem;
+}
+
+.interesante {
+    figure {
+        margin-top: 1.5rem;
+        /*background: #009d78;*/
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

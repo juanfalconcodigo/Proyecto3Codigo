@@ -1,0 +1,77 @@
+@import "../atoms/buttons";
+@import "../atoms/etiqueta";
+.post {
+    /*background: red;*/
+    time {
+        font-family: Arial;
+        font-size: 1.1rem;
+        color: #4d4d4d;
+    }
+    h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.25;
+    }
+}
+
+.post-content {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    /* background: blue;*/
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 2rem;
+    & figure {
+        /*margin-right: 2rem;*/
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+    /*background: yellow;*/
+    justify-content: space-between;
+    & p {
+        width: 100%;
+        margin-top: 0.9rem;
+        font-family: Arial;
+        font-size: 1.2rem;
+        line-height: 1.38;
+        margin-bottom: 2.7rem;
+    }
+    & div {
+        display: flex;
+        /*background: greenyellow;*/
+        justify-content: space-between;
+        margin-bottom: .5rem;
+        & h4 {
+            align-self: center;
+        }
+        & ul {
+            display: flex;
+            & li {
+                margin-left: 1.2rem;
+                & a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .post-label {
+        background: #5c3667;
+        color: #ffffff;
+    }
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-h3 {
+    margin-bottom: 0.6rem;
+}

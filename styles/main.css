@@ -1,4 +1,5 @@
 /*Global*/
+
 * {
     box-sizing: border-box;
 }
@@ -22,12 +23,11 @@ h6 {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
-
-}
+h1 {}
 
 h2 {
     font-size: 3.2rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -39,17 +39,22 @@ a {
     color: inherit;
 }
 
+
 /*
 Layout
 */
+
 .container {
     max-width: 960px;
     width: 100%;
     margin: auto;
 }
 
+
 /*label*/
+
 .label {
+    font-size: 1.2rem;
     color: black;
     background: white;
     display: inline-block;
@@ -58,7 +63,9 @@ Layout
     border-radius: 8px;
 }
 
+
 /*btn-social*/
+
 .btn-social {
     width: 2.6rem;
     height: 2.6rem;
@@ -79,7 +86,9 @@ Layout
     color: #1ca1f2;
 }
 
+
 /*HEADER*/
+
 header {
     background-color: #62346f;
 }
@@ -110,7 +119,9 @@ header .list-share li {
     margin-left: 2.0rem;
 }
 
+
 /*nav-main*/
+
 .nav-main ul {
     display: flex;
 }
@@ -119,13 +130,25 @@ header .list-share li {
     margin-right: 4.0rem;
 }
 
+
 /*coverpage*/
+
 .coverpage {
+    /*background: yellowgreen;*/
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.coverpage .container-one-two {
+    /*background: tomato;*/
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
 }
 
 .coverpage .articles {
+    /*background: red;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,6 +156,7 @@ header .list-share li {
 
 
 /*Articles*/
+
 .post {
     position: relative;
 }
@@ -147,7 +171,7 @@ header .list-share li {
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem 2rem 3.8rem;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
 }
 
 .post .time-social {
@@ -167,11 +191,19 @@ header .list-share li {
 
 .post h3 {
     margin-bottom: 2.0rem;
+    font-weight: bold;
 }
 
+
 /*post-one*/
+
 .post-one h2 {
     display: inline-block;
+    align-self: flex-start;
+}
+
+.post-one .label {
+    display: none;
     align-self: flex-start;
 }
 
@@ -180,7 +212,7 @@ header .list-share li {
     width: 50%;
     height: 0.8rem;
     background: white;
-    border-radius: 6px; 
+    border-radius: 6px;
     display: block;
     margin-top: 0.8rem;
 }
@@ -190,7 +222,9 @@ header .list-share li {
     line-height: 3.2rem;
 }
 
+
 /*post-two*/
+
 .post-two h3 {
     font-size: 2rem;
     line-height: 2.4rem;
@@ -209,15 +243,19 @@ header .list-share li {
     margin-top: 0.8rem;
 }
 
+
 /*post-three*/
+
 .post-three h3 {
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    /*importante*/
+    margin-bottom: 0.4rem;
     line-height: 2rem;
     padding-right: 7rem;
 }
 
 .post-three .text {
+    padding: 1rem;
     padding: 0.8rem;
     justify-content: flex-end;
 }
@@ -228,10 +266,392 @@ header .list-share li {
     right: 8px;
 }
 
-
+.post-three .label a {
+    font-weight: bold;
+}
 
 
 /*main*/
+
 main {
     padding: 2rem 0;
+}
+
+
+/*´para imagenes*/
+
+figure {
+    overflow: hidden;
+    height: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*contenedor secciones*/
+
+.contenedor-secciones {
+    display: flex;
+}
+
+
+/*actuality*/
+
+.actuality {
+    /*background: green;*/
+    width: 68%;
+    margin-top: 2.4rem;
+}
+
+.actuality h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #62346f;
+    margin-bottom: 1.4rem;
+}
+
+.present {
+    /*background: yellow;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.present time {
+    font-size: 11px;
+}
+
+.present-article {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+/*ver mas actuality*/
+
+.enlace {
+    display: flex;
+    justify-content: center;
+}
+
+.enlace a {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    border: solid 3px #7b3fb6;
+    color: #7b3fb6;
+    padding: 5px 36px;
+}
+
+
+/*most-read*/
+
+.most-read {
+    /*background: sienna;*/
+    width: 35%;
+    margin-top: 2.4rem;
+}
+
+.most {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.most-read h2 {
+    font-size: 2.8rem;
+    color: #009d78;
+    margin-bottom: 1.4rem;
+}
+
+.most-read time {
+    font-size: 11px;
+}
+
+.enlace .green {
+    color: #009d78;
+    border: solid 3px #009d78;
+}
+
+
+/*footer*/
+
+footer {
+    background: #62346f;
+    color: inherit;
+    font-family: "lato";
+    width: 100%;
+}
+
+footer .container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background: #4267b2;*/
+    height: 7.6rem;
+}
+
+.container-footer a {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.container-footer p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/*responsive*/
+
+@media (max-width:982px) {
+    header .container {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    main {
+        padding: 1.8rem 1rem;
+    }
+    .present figure {
+        width: 290px;
+        height: 160px;
+    }
+    .most-read figure {
+        width: 290px;
+        height: 160px;
+    }
+    .coverpage {
+        display: block;
+    }
+    .coverpage .container-one-two {
+        /*background: tomato;*/
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .container-one-two {
+        width: 100%;
+    }
+    .container-one-two .post-one {
+        width: 78%;
+    }
+    .container-one-two .post-two {
+        width: 19%;
+    }
+    .container-one-two .post-one figure {
+        height: 100%;
+    }
+    .container-one-two .post-two figure {
+        background: yellow;
+        height: 100%;
+    }
+    .container-one-two .post-two img {
+        background-size: contain;
+    }
+    .coverpage .articles {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .articles figure {
+        width: 238px;
+        height: 100px;
+    }
+    .post-three h3 {
+        font-size: 1.3rem;
+        /*importante*/
+        line-height: 1.15;
+        padding-right: 2rem;
+        font-weight: bold;
+    }
+    .container .btn-social {
+        width: 2.1rem;
+        height: 2.1rem;
+        line-height: 2.1rem;
+    }
+    .container .container-one-two .btn-social {
+        width: 2.6rem;
+        height: 2.6rem;
+        line-height: 2.4rem;
+    }
+    .label {
+        padding: 0.4rem 0.5rem;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    .time-social {
+        font-size: 1.1rem;
+        /*background: teal;*/
+    }
+    footer .container-footer {
+        /*background: #4267b2;*/
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:930px) {
+    .present figure {
+        width: 270px;
+        height: 160px;
+    }
+    .most-read figure {
+        width: 270px;
+        height: 160px;
+    }
+}
+
+@media (max-width:880px) {
+    .present figure {
+        width: 250px;
+        height: 160px;
+    }
+    .most-read figure {
+        width: 250px;
+        height: 160px;
+    }
+}
+
+@media (max-width:810px) {
+    .present figure {
+        width: 236px;
+        height: 160px;
+    }
+    .most-read figure {
+        width: 236px;
+        height: 160px;
+    }
+    /*preparando para tableta*/
+    header .container {
+        height: 7.5rem;
+    }
+    header .logo {
+        font-family: Lato;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    .post-one .text {
+        padding: 2rem 2rem 2.5rem;
+    }
+    footer .container-footer {
+        height: 5.5rem;
+    }
+    footer .container-footer .logo {
+        font-size: 2.2rem;
+    }
+    footer .container-footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:765px) {
+    /*por mientras*/
+    header .list-share,
+    header .nav-main {
+        display: none;
+    }
+    /**/
+    .contenedor-secciones {
+        display: block;
+    }
+    .actuality {
+        width: 100%;
+    }
+    .actuality .present {
+        justify-content: space-around;
+    }
+    .most-read {
+        width: 100%;
+    }
+    .most {
+        justify-content: space-around;
+    }
+    .coverpage .articles {
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .articles .post-three {
+        margin-bottom: 1.5em;
+    }
+    .articles .post-three:last-child {
+        margin-bottom: 0;
+    }
+    .articles figure {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .container .container-one-two .btn-social {
+        width: 2.1rem;
+        height: 2.1rem;
+        line-height: 2.1rem;
+    }
+    .post time {
+        font-size: 0.9rem;
+    }
+    .post h3 {
+        font-size: 1.5rem;
+        padding-right: 6rem;
+    }
+    .post-one h3 {
+        line-height: 2rem;
+    }
+    .post-one .text {
+        padding: 0.8rem 0.8rem 2.2rem;
+    }
+    .post-one .label {
+        display: inline-block;
+    }
+    .post-one h2 {
+        display: none;
+    }
+    .post-two h3 {
+        margin-bottom: .4em;
+    }
+    .container-one-two {
+        flex-flow: column wrap;
+    }
+    .post-two .time-social {
+        display: flex;
+    }
+    .container-one-two .post-one {
+        width: 100%;
+        margin-bottom: 1em;
+        height: 15em;
+    }
+    .container-one-two .post-two {
+        width: 100%;
+        height: 9em;
+    }
+    .actuality .present {
+        display: flex;
+        flex-direction: column;
+    }
+    .present figure {
+        width: 100%;
+    }
+    .actuality h2,
+    .most-read h2 {
+        font-size: 2.2rem;
+    }
+    /**/
+    .most {
+        display: flex;
+        flex-direction: column;
+    }
+    .most figure {
+        width: 100%;
+    }
+    footer .container-footer .logo {
+        font-size: 1.5rem;
+    }
+    footer .container-footer {
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
 }

@@ -1,0 +1,83 @@
+@import "../atoms/etiqueta";
+header {
+    background-color: #62346f;
+    & .logo {
+        font-size: 4.2rem;
+        font-weight: bold;
+        margin-right: 8.8rem;
+    }
+    & .container-header {
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .header-left {
+        display: flex;
+        align-items: center;
+    }
+    & .list-share {
+        display: flex;
+        align-items: center;
+    }
+    & .list-share li {
+        margin-left: 2.0rem;
+    }
+}
+
+
+/*nav-main*/
+
+.nav-main {
+    & ul {
+        /*background: red;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & li {
+            margin-right: 4.0rem;
+            font-size: 1.4rem;
+            & a {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+
+/*search-header*/
+
+.search-header {
+    display: block;
+    background-color: #3a1045;
+    height: 41px;
+    & .container {
+        display: flex;
+        /*background: yellow;*/
+        height: 100%;
+        flex-flow: row;
+        & nav {
+            /*background: blue;*/
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            font-family: lato;
+        }
+    }
+}
+
+.btn {
+    border: solid 2px #000000;
+    border-radius: 100%;
+}
+
+
+/*especiales*/
+
+
+/*.ml {
+    margin-left: 0;
+}*/

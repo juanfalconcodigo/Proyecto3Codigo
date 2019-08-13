@@ -1,0 +1,42 @@
+* {
+    box-sizing: $box;
+}
+
+html {
+    font-size: $base;
+}
+
+body {
+    font-family: $fuente-principal;
+    font-size: $fuente-size;
+    color: $color-principal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $h-fuente-principal;
+}
+
+h2 {
+    font-size: $h2-particular-fuente;
+    font-weight: $h2-particular-weight;
+}
+
+h3 {
+    font-size: $h3-particular-fuente;
+}
+
+a {
+    text-decoration: $a-decoration;
+    color: $a-color;
+}
+
+.container {
+    max-width: $container-max-width;
+    width: $container-width;
+    margin: $container-margin;
+}

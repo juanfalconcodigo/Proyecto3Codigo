@@ -1,0 +1,35 @@
+@import "../molecules/articulo";
+@import "../molecules/articulo-interesante";
+main {
+    padding: 2rem 0 5rem 0;
+    color: black;
+    & .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2.2rem;
+    }
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.14;
+    color: #009d78;
+    margin-bottom: 1rem;
+}
+
+.interesante {
+    figure {
+        /*background: #009d78;*/
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
